@@ -8,6 +8,7 @@ The ResumeData class serves as the immutable contract for extracted resume infor
 from dataclasses import dataclass, asdict
 from typing import Any, Dict, List
 
+
 @dataclass(frozen=True)
 class ResumeData:
     """
@@ -22,6 +23,7 @@ class ResumeData:
         email: Primary email address (string)
         skills: List of technical and soft skills (list of strings)
     """
+
     name: str
     email: str
     skills: List[str]
